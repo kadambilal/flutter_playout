@@ -16,7 +16,7 @@ class FlutterPlayoutPlugin: FlutterPlugin, MethodCallHandler {
   private lateinit var channel : MethodChannel
 
   override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
-    channel = MethodChannel(flutterPluginBinding.binaryMessenger, "untitled")
+    channel = MethodChannel(flutterPluginBinding.binaryMessenger, "flutter_playout")
     channel.setMethodCallHandler(this)
   }
 
